@@ -41,7 +41,7 @@ body{
     margin-top:20px ;
     position: absolute;
     bottom: 30px;
-    left: 95px;
+    left: 55px;
 }
 
 .buttons button {
@@ -58,7 +58,8 @@ body{
 }
 .buttons button i {
     color: #333;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 1rem;
 }
 
 
