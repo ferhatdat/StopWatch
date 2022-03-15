@@ -38,22 +38,18 @@ body{
 
 .container .buttons{
     text-align: center;
-    margin-top:20px ;
     position: absolute;
     bottom: 30px;
-    left: 55px;
+    left: 80px;
 }
 
 .buttons button {
-    padding: 0.5rem 0.5rem;
-    outline: none;
-    border: none;
-    margin: 0 5px;
     color: black;
+    border: none;
+    outline: none;
     background-color: rgb(73, 199, 157);
     font-size: 1.2rem;
     font-weight: 500;
-    border-radius: 0.3rem;
     cursor: pointer;
 }
 .buttons button i {

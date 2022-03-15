@@ -4,7 +4,6 @@ const startStopBtn = document.querySelector(".startStop");
 const resetBtn = document.querySelector(".reset");
 
 startStopBtn.addEventListener("click", (e)=>{
-    e.target.className = "fa-solid fa-play"
     if (setIntervalId == undefined){
         setIntervalId = setInterval(()=>{
             ms++
@@ -29,10 +28,11 @@ startStopBtn.addEventListener("click", (e)=>{
         e.target.className = "fa-solid fa-play"
     }
 });
-resetBtn.addEventListener("click", ()=>{
+resetBtn.addEventListener("click", (e)=>{
     clearInterval(setIntervalId);
     setIntervalId = undefined;
-    hr = min = sec = ms = "0" + 0
+    min = sec = ms = "0" + 0
+    e.target.parentElement.previousElementSibling.firstElementChild.className = "fa-solid fa-play"
     putValue();
 });
 function putValue(){
